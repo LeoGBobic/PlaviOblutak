@@ -1,0 +1,175 @@
+
+<header
+    class="fixed top-0 left-0 w-full z-50 bg-stone-limestone/95 backdrop-blur-md border-b border-stone-mortar"
+>
+    <div
+        class="h-20 max-w-[1320px] mx-auto px-margin-tablet lg:px-margin flex items-center justify-between"
+    >
+        <!-- Logo -->
+        <a
+            class="flex items-center gap-space-md group"
+            data-path="naslovna"
+            href="#"
+        >
+            <img
+                alt="Logo"
+                class="h-8 w-auto object-contain"
+                src="assets/images/logo.png"
+            >
+        </a>
+
+        <!-- Desktop navigation -->
+        <nav
+            class="hidden xl:flex items-center gap-space-lg h-full"
+            data-active-classes="text-adriatic-deep border-b-2 border-adriatic-deep font-semibold"
+        >
+            <a aria-current="page"
+               class="h-full flex items-center uppercase tracking-wider transition-colors text-adriatic-deep border-b-2 border-adriatic-deep font-semibold"
+               data-path="naslovna" href="#">Naslovna</a>
+
+            <a class="h-full flex items-center font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+               data-path="djelatnosti" href="#">Djelatnosti</a>
+
+            <a class="h-full flex items-center font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+               data-path="objekti" href="#">Objekti</a>
+
+            <a class="h-full flex items-center font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+               data-path="radovi" href="#">Radovi</a>
+
+            <a class="h-full flex items-center font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+               data-path="reference" href="#">Reference</a>
+
+            <a class="h-full flex items-center font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+               data-path="kontakt" href="#">Kontakt</a>
+
+            <a class="h-full flex items-center font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+               data-path="licenca" href="#">Licenca</a>
+        </nav>
+
+        <!-- Header actions -->
+        <div class="flex items-center gap-space-md">
+
+            <!-- Language selector -->
+            <div class="hidden sm:flex items-center border border-stone-mortar px-space-xs py-0.5 bg-stone-sand text-on-surface-variant font-label-sm text-label-sm">
+                <button class="px-space-xs py-0.5 font-bold text-adriatic-deep" type="button">HR</button>
+                <span class="text-stone-mortar">|</span>
+                <button class="px-space-xs py-0.5 text-on-surface-variant hover:text-on-surface" type="button">EN</button>
+            </div>
+
+            <!-- Contact button -->
+            <a
+                class="hidden md:inline-flex items-center justify-center px-space-md py-space-sm bg-adriatic-deep text-on-primary font-label-md text-label-md uppercase tracking-widest hover:bg-tertiary-container transition-all border border-adriatic-deep shadow-sm"
+                data-path="kontakt"
+                href="#kontakt"
+            >
+                Zatražite procjenu
+            </a>
+
+            <!-- Mobile menu button -->
+            <button
+                id="menuOpen"
+                type="button"
+                aria-label="Otvori izbornik"
+                aria-expanded="false"
+                aria-controls="mobileMenu"
+                class="xl:hidden flex items-center justify-center w-11 h-11 border border-stone-mortar text-adriatic-deep hover:bg-stone-sand transition-colors"
+            >
+                <span class="text-2xl leading-none" aria-hidden="true">&#9776;</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div
+    id="menuOverlay"
+    class="fixed inset-0 bg-black/50 z-[60] opacity-0 invisible transition-all duration-300"
+></div>
+
+<!-- Mobile sidebar -->
+<aside
+    id="mobileMenu"
+    aria-hidden="true"
+    class="fixed inset-0 w-full h-full bg-stone-limestone z-[70] translate-x-full transition-transform duration-300 ease-in-out"
+>
+    <div class="h-full flex flex-col">
+
+        <!-- Sidebar header -->
+        <div class="shrink-0 h-20 px-6 flex items-center justify-between border-b border-stone-mortar">
+            <img
+                src="assets/images/logo.png"
+                alt="Logo"
+                class="h-8 w-auto"
+            >
+
+            <button
+                id="menuClose"
+                type="button"
+                aria-label="Zatvori izbornik"
+                class="w-10 h-10 flex items-center justify-center text-adriatic-deep hover:bg-stone-sand transition-colors"
+            >
+                <span class="text-2xl leading-none" aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <!-- Sidebar navigation -->
+        <nav class="flex-1 min-h-0 overflow-y-auto px-6 py-8 flex flex-col gap-1">
+
+            <a href="#" data-path="naslovna"
+               class="mobile-nav-link py-4 border-b border-stone-mortar uppercase tracking-widest text-sm font-semibold text-adriatic-deep">
+                Naslovna
+            </a>
+
+            <a href="#" data-path="djelatnosti"
+               class="mobile-nav-link py-4 border-b border-stone-mortar uppercase tracking-widest text-sm text-on-surface-variant hover:text-adriatic-deep transition-colors">
+                Djelatnosti
+            </a>
+
+            <a href="#" data-path="objekti"
+               class="mobile-nav-link py-4 border-b border-stone-mortar uppercase tracking-widest text-sm text-on-surface-variant hover:text-adriatic-deep transition-colors">
+                Objekti
+            </a>
+
+            <a href="#" data-path="radovi"
+               class="mobile-nav-link py-4 border-b border-stone-mortar uppercase tracking-widest text-sm text-on-surface-variant hover:text-adriatic-deep transition-colors">
+                Radovi
+            </a>
+
+            <a href="#" data-path="reference"
+               class="mobile-nav-link py-4 border-b border-stone-mortar uppercase tracking-widest text-sm text-on-surface-variant hover:text-adriatic-deep transition-colors">
+                Reference
+            </a>
+
+            <a href="#" data-path="kontakt"
+               class="mobile-nav-link py-4 border-b border-stone-mortar uppercase tracking-widest text-sm text-on-surface-variant hover:text-adriatic-deep transition-colors">
+                Kontakt
+            </a>
+
+            <a href="#" data-path="licenca"
+               class="mobile-nav-link py-4 border-b border-stone-mortar uppercase tracking-widest text-sm text-on-surface-variant hover:text-adriatic-deep transition-colors">
+                Licenca
+            </a>
+
+        </nav>
+
+        <!-- Sidebar footer -->
+        <div class="shrink-0 p-6 border-t border-stone-mortar">
+
+            <div class="flex items-center gap-4 mb-6 text-sm">
+                <button class="font-bold text-adriatic-deep" type="button">HR</button>
+                <span class="text-stone-mortar">|</span>
+                <button class="text-on-surface-variant" type="button">EN</button>
+            </div>
+
+            <a
+                href="#kontakt"
+                data-path="kontakt"
+                class="mobile-nav-link flex items-center justify-center w-full px-6 py-4 bg-adriatic-deep text-on-primary uppercase tracking-widest text-sm hover:bg-tertiary-container transition-colors"
+            >
+                Zatražite procjenu
+            </a>
+
+        </div>
+
+    </div>
+</aside>

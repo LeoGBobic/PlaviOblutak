@@ -1,0 +1,32 @@
+/* Global site styles.
+   Tailwind utility classes and design tokens are configured in index.html. */
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Keep the hero shader behind its content and responsive to the section size. */
+#shader-canvas-ANIMATION_35 {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
